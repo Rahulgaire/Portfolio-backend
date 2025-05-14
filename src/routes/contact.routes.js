@@ -8,10 +8,10 @@ import {
 } from "../controllers/contact.controllers.js";
 
 const router = express.Router();
-
-router.post("/contact", submitContact);
-router.get("/contact", getAllContacts);
+router.route('/contact')
+.get(getAllContacts)
+.post(submitContact)
+.delete(deleteAll);
 router.get("/:id", getContactById);
 router.delete("/:id", deleteContact);
-router.delete("/contact", deleteAll);
 export default router;

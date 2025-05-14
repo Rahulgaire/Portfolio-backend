@@ -10,7 +10,8 @@ const app = express()
 app.use(express.json())
 app.use(cors({
     // origin: 'http://localhost:5173', 
-    origin: 'https://portfolio-frontend-vdfv.onrender.com', 
+    origin: 'https://portfolio-frontend-82aq.onrender.com', 
+
 }
 ))
 app.get('/',(req,res)=>{

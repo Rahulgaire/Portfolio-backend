@@ -12,8 +12,8 @@ export const submitContact = async (req, res) => {
     // Validate fields
     if (!name || !email || !subject || !message) {
       return res.status(400).json({
-        success: false,
-        message: "All fields (name, email, subject, message) are required.",
+        "success": false,
+        "message": "All fields are required.",
       });
     }
 
@@ -58,7 +58,7 @@ export const submitContact = async (req, res) => {
         <p><strong>Your Message:</strong></p>
         <p>${message}</p>
         <hr/>
-        <p>Best regards,<br/>Biom Business Consultants Pvt. Ltd.</p>
+        <p>Best regards,<br/>Rahul Gaire</p>
       `,
     };
 

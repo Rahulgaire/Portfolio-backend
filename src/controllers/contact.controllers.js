@@ -8,7 +8,6 @@ dotenv.config();
 export const submitContact = async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
-
     // Validate fields
     if (!name || !email || !subject || !message) {
       return res.status(400).json({
